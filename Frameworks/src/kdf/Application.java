@@ -14,6 +14,7 @@ public class Application {
 	public void verifyInvalidLogin() throws IOException {
 		String[][] data = GenericMethods.getData("D:\\SelOct13\\TestData2.xlsx", "Sheet1");
 		for(int i = 1;i<data.length;i++) {
+			//Making changes to the code after R1.1
 			switch(data[i][3]) {
 			case "openBrowser":
 				Methods.openBrowser();
